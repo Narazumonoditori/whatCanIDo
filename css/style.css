@@ -151,9 +151,9 @@ section + section {
   background: #fff;
   width: 100%;
   display: none;
-  height: calc(100vh - 6rem);
+  height: calc(100dvh - 6rem);
   overflow: scroll;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 .l-header .container #sp-nav .accordion {
   font-weight: bold;
@@ -228,14 +228,14 @@ section + section {
 }
 .l-aside .content {
   width: 320px;
-  height: calc(100vh - 5rem);
+  height: calc(100dvh - 5rem);
   border-radius: 2rem 2rem 0 0;
   user-select: none;
   position: fixed;
   background: #fff;
   box-shadow: 0 0 4px #ddd;
   z-index: 2;
-  bottom: calc(-100vh + 5rem + 69px);
+  bottom: calc(-100dvh + 5rem + 69px);
   right: 50%;
   transform: translate(50%, 0);
 }
@@ -281,7 +281,7 @@ section + section {
   pointer-events: none;
 }
 .l-aside.is-scrolled .content {
-  bottom: calc(-100vh + 5rem + 69px);
+  bottom: calc(-100dvh + 5rem + 69px);
 }
 .l-aside.is-scrolled .content button {
   pointer-events: auto;
@@ -486,6 +486,12 @@ section + section {
 .c-btn-index .close {
   color: #68c25c;
   background: #fff;
+}
+.c-btn-index:hover {
+  opacity: 1;
+}
+.c-btn-index:active {
+  opacity: 1;
 }
 
 .c-btn-secondary {
