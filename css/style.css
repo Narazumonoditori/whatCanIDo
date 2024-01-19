@@ -958,6 +958,9 @@ section + section {
   justify-content: center;
   align-items: center;
 }
+.p-sub-aside > ul > li a:hover {
+  opacity: 1;
+}
 .p-sub-aside > ul > li a.is-actived {
   background: #68c25c;
   color: #fff;

@@ -11,11 +11,17 @@
   sections.forEach((section) => {
     sectionsTop.push(section.getBoundingClientRect().top);
   });
+  
   const pagesOffsetY = sectionsTop.map((offsetY) => {
     return offsetY - bodyTop - headerHeight;
   });
+
   const lastContent = document.querySelector('main .container + section');
   pagesOffsetY.push(lastContent.getBoundingClientRect().top - bodyTop);
+
+  const pagesOffsetYMathFloored = pagesOffsetY.map(pagesOffsetY => {
+    return Math.floor(pagesOffsetY);
+  });
 
   //window.scroll();
   window.addEventListener('scroll', () => {
@@ -24,7 +30,7 @@
     sidebarMenus.forEach((sidebarMenu, index) => {
       sidebarMenu.classList.remove('is-actived');
 
-      if (scrollY >= pagesOffsetY[index] && scrollY < pagesOffsetY[index + 1]) {
+      if (pagesOffsetYMathFloored[index] <= scrollY && scrollY < pagesOffsetYMathFloored[index + 1]) {
         sidebarMenu.classList.add('is-actived');
       }
     });
@@ -34,11 +40,10 @@
   sidebarMenus.forEach((sidebarMenu, index) => {
     sidebarMenu.addEventListener('click', e => {
       e.preventDefault();
-      console.log(e, index);
-
+      
       window.scroll({
         left: 0,
-        top: pagesOffsetY[index],
+        top: pagesOffsetYMathFloored[index],
         behavior: 'smooth',
       });
     });
