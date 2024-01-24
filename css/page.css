@@ -29,11 +29,15 @@ img {
   vertical-align: bottom;
 }
 
+html.is-clicked {
+  overflow-y: hidden;
+}
+html.is-clicked body {
+  overflow-y: hidden;
+}
+
 body {
   background: #F5F8FA;
-}
-body.is-clicked {
-  overflow-y: hidden;
 }
 
 section + section {

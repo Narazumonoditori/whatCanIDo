@@ -2,7 +2,7 @@
 
 {
   //aside.scroll();
-  const body = document.querySelector('body');
+  const html = document.querySelector('html');
   const aside = document.querySelector('#aside');
   window.addEventListener('scroll', () => {
     const scrollY = window.scrollY;
@@ -18,13 +18,13 @@
   const navBtn = document.querySelector('#aside button');
   navBtn.addEventListener('click', () => {
     aside.classList.toggle('is-clicked');
-    body.classList.toggle('is-clicked');
+    html.classList.toggle('is-clicked');
   });
 
   //#mask.click();
   const mask = document.querySelector('#mask');
   mask.addEventListener('click', () => {
     aside.classList.remove('is-clicked');
-    body.classList.remove('is-clicked');
+    html.classList.remove('is-clicked');
   });
 }

@@ -2,11 +2,11 @@
 
 {
   //.c-hamburger-btn.click();
-  const body = document.querySelector('body');
+  const html = document.querySelector('html');
   const hamburgerBtn = document.querySelector('.c-btn-hamburger');
   hamburgerBtn.addEventListener('click', () => {
     hamburgerBtn.parentNode.classList.toggle('is-clicked');
-    body.classList.toggle('is-clicked');
+    html.classList.toggle('is-clicked');
   });
 
   //.c-btn-accordion.click();
