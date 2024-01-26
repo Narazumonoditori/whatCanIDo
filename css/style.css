@@ -31,6 +31,7 @@ img {
 
 html.is-clicked {
   overflow-y: hidden;
+  height: 100%;
 }
 html.is-clicked body {
   overflow-y: hidden;
