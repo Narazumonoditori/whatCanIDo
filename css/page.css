@@ -34,6 +34,7 @@ html.is-clicked {
 }
 html.is-clicked body {
   overflow-y: hidden;
+  height: 100%;
 }
 
 body {
