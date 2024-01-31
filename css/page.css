@@ -29,15 +29,6 @@ img {
   vertical-align: bottom;
 }
 
-html.is-clicked {
-  overflow-y: hidden;
-  height: 100%;
-}
-html.is-clicked body {
-  overflow-y: hidden;
-  height: 100%;
-}
-
 body {
   background: #F5F8FA;
 }
@@ -149,8 +140,7 @@ section + section {
   }
 }
 .l-header .container #sp-nav {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding: 5rem 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -281,7 +271,7 @@ section + section {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4666666667);
+  background: rgba(0, 0, 0, 0.651);
   z-index: 1;
   opacity: 0;
   pointer-events: none;
@@ -993,7 +983,7 @@ section + section {
   margin-right: 0.5rem;
 }
 .p-sub-aside .mask {
-  background: rgba(221, 221, 221, 0.9);
+  background: rgba(221, 221, 221, 0.95);
   position: fixed;
   top: 0;
   left: 0;
